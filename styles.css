@@ -1,0 +1,435 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+#consumption-meter {
+    background-color: #333;
+    color: #ff6600;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+#temperature {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* Solar Table Styling */
+.solar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.solar-table thead {
+    background-color: #FF4500; /* Orange to match theme */
+    color: white;
+}
+
+.solar-table th, .solar-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.solar-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.solar-table tfoot {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6600; /* Orange header */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-size: 2em;
+}
+
+.meter-info {
+    margin: 20px 0;
+}
+
+.meter {
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.meter-fill {
+    height: 100%;
+    background-color: #ff6600;
+    border-radius: 15px;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+}
+
+.meter-info h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Page Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Professional font */
+    background-color: #fff8f0; /* Light background */
+    color: #333;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #ff6600; /* Orange header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #333;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Helvetica', sans-serif; /* Professional font for title */
+}
+
+header nav {
+    margin-top: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Section Styling with Borders and Doodles */
+main {
+    margin-top: 30px;
+    padding: 20px;
+    border: 3px dashed #ff6600; /* Dashed orange border around the content */
+    background-color: #fdf1e3; /* Light yellowish background for content */
+    border-radius: 15px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    color: #ff6600;
+    text-decoration: underline;
+    font-family: 'Arial', sans-serif;
+}
+
+.intro p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.decorative-section {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border: 3px solid #ff6600;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.decorative-section h3 {
+    font-size: 2em;
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.decorative-section p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Doodles and Decorative Images */
+.doodles-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.doodle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    animation: doodle-animation 5s infinite alternate;
+}
+
+.doodle1 {
+    top: -60px;
+    left: -20px;
+}
+
+.doodle2 {
+    bottom: -20px;
+    right: -20px;
+}
+
+@keyframes doodle-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fefefe;
+}
+
+header {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #333;
+}
+
+header .logo img {
+    width: 90px;
+    vertical-align: middle;
+}
+
+header h1 {
+    display: inline;
+    margin-left: 15px;
+    font-size: 1.8rem;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.intro, .environmental-issues, .initiatives {
+    background-color: #fff3e6;
+}
+
+.energy-sources, .energy-gases, .energy-saving-tips {
+    background-color: #fef2e6;
+}
+
+h2 {
+    color: #ff6600;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff6600;
+    display: inline-block;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    border-top: 4px solid #ff6600;
+}
+
+.decorative-section {
+    text-align: center;
+    border: 2px dashed #ff6600;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff9f3;
+    border-radius: 5px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: -20px;
+}
+
+
+/* Background for the entire page */
+body {
+    font-family: Arial, sans-serif; /* Use a professional font */
+    background-image: url('https://images.shiksha.com/mediadata/images/1488259268phpI3BoKQ.jpeg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333; /* Text color */
+    margin: 0;
+    padding: 0; opacity: 90%;
+}
+
+/* Container for content sections with lower opacity */
+.content {
+    background-color: rgba(255, 255, 255, 0.7); /* Reduced opacity for more background visibility */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Specific section styling */
+h1, h2, p {
+    margin: 10px 0;
+}
+
+canvas {
+    background-color: rgba(255, 255, 255, 0.9); /* Higher opacity on chart canvas for clarity */
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.percentage-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.percentage {
+    background-color: rgba(240, 128, 128, 0.8); /* Light red background for visibility */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 120px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);}

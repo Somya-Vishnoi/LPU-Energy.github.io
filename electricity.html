@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Energy Dashboard - Electricity Usage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Electricity Consumption at LPU</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="solar.html">Solar Energy</a>
+            <a href="electricity.html">Electricity Usage</a>
+            <a href="temperature.html">Temperature</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Electricity Consumption Meters</h2>
+            <p>Below are real-time electricity consumption meters for various blocks across the campus. The meters simulate the current consumption in kilowatt-hours (kWh).</p>
+
+            <div class="meter-info">
+                <h3>Admission Block</h3>
+                <div class="meter" id="admission-meter"></div>
+                <p>Electricity Consumed: <span id="admission-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Central Library</h3>
+                <div class="meter" id="library-meter"></div>
+                <p>Electricity Consumed: <span id="library-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Boys Hostels</h3>
+                <div class="meter" id="boys-meter"></div>
+                <p>Electricity Consumed: <span id="boys-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Girls Hostels</h3>
+                <div class="meter" id="girls-meter"></div>
+                <p>Electricity Consumed: <span id="girls-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Uni Mall</h3>
+                <div class="meter" id="mall-meter"></div>
+                <p>Electricity Consumed: <span id="mall-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Uni Hospital</h3>
+                <div class="meter" id="hospital-meter"></div>
+                <p>Electricity Consumed: <span id="hospital-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Baldev Raj Mittal Unipolis</h3>
+                <div class="meter" id="unipolis-meter"></div>
+                <p>Electricity Consumed: <span id="unipolis-electricity">kWh</span></p>
+            </div>
+
+            <div class="meter-info">
+                <h3>Shanti Devi Mittal Auditorium</h3>
+                <div class="meter" id="auditorium-meter"></div>
+                <p>Electricity Consumed: <span id="auditorium-electricity">550 kWh</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lovely Professional University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Energy Dashboard - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Lovely_Professional_University_logo.png" alt="LPU Logo" > <!-- Placeholder for the university logo -->
+        </div><br>
+        <h1>Welcome to LPU Energy Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="solar.html">Solar Energy</a>
+            <a href="electricity.html">Electricity Usage</a>
+            <a href="temperature.html">Temperature</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Energy Efficiency at LPU</h2>
+            <p>Welcome to the Lovely Professional University (LPU) Energy Dashboard, where we monitor and manage energy consumption across the campus. This site provides real-time data on electricity usage, solar energy generation, and environmental conditions.</p>
+            <p>Our goal is to reduce energy consumption and promote sustainability on campus.</p>
+        </section>
+
+        <main>
+            <section class="intro">
+                <h2>Our Commitment to a Sustainable Future</h2>
+                <p>Lovely Professional University (LPU) is dedicated to environmental sustainability, using renewable energy and reducing our ecological footprint. We strive to educate and inspire our community to make environmentally conscious decisions.</p>
+            </section>
+    
+            <section class="energy-sources">
+                <h2>Sources of Energy</h2>
+                <div class="energy-types">
+                    <h3>Renewable Energy</h3>
+                    <ul>
+                        <li>Solar Energy</li>
+                        <li>Wind Energy</li>
+                        <li>Hydroelectric Energy</li>
+                        <li>Biomass</li>
+                        <li>Geothermal Energy</li>
+                    </ul>
+                </div>
+                <div class="energy-types">
+                    <h3>Non-Renewable Energy</h3>
+                    <ul>
+                        <li>Coal</li>
+                        <li>Oil</li>
+                        <li>Natural Gas</li>
+                        <li>Nuclear Energy</li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="environmental-issues">
+                <h2>Environmental Issues Related to Energy</h2>
+                <p>Non-renewable energy sources, such as coal and oil, significantly contribute to air pollution and greenhouse gas emissions. The over-reliance on fossil fuels has led to issues like climate change, environmental degradation, and resource depletion. Transitioning to renewable energy sources is essential to reduce harmful impacts on our planet.</p>
+            </section>
+    
+            <section class="energy-gases">
+                <h2>Energy-Generating Gases</h2>
+                <p>Different types of gases are used to generate energy, including:</p>
+                <ul>
+                    <li><strong>CNG (Compressed Natural Gas)</strong> – A cleaner alternative to gasoline.</li>
+                    <li><strong>Biogas</strong> – Produced from organic waste.</li>
+                    <li><strong>Nuclear Energy</strong> – Generated through nuclear fission.</li>
+                    <li><strong>Coal and Oil</strong> – Traditional sources of energy with high emissions.</li>
+                    <li><strong>Hydroelectric Power</strong> – Generated from water flow, a renewable source.</li>
+                </ul>
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <body>
+            <div class="content">
+                <h1>Growing Energy Needs</h1>
+                <p>Energy has always been closely linked to man's economic growth and development. Present strategies for development that have focused on rapid economic growth have used energy utilization as an index of economic development. The index, however, does not take into account the long-term effects on society of excessive energy utilization.</p>
+                <p>For almost 200 years, coal was the primary energy source, fueling the industrial revolution in the 19th century. At the close of the 20th century, oil accounted for <strong>31.7%</strong> of the world's commercial energy consumption, followed by coal <strong>(26.5%)</strong> and natural gas <strong>(23.3%)</strong>, while nuclear <strong>(4.0%)</strong> and hydro/renewable <strong>(6.4%)</strong> accounted for the rest.</p>
+                <p>Industrialization and urbanization and the unbelievable rise in human settlements have multiplied the energy requirement by several times. Modern lifestyle and man's growing dependence on machines and equipment for his personal and professional work has added to the energy demand. Global oil demand continues to grow until 2040, mostly because of the lack of easy alternatives to oil in road freight, aviation, and petrochemicals, according to WEO-2016, published by the International Energy Agency.</p>
+        
+                <!-- Container for the pie chart -->
+                <div>
+                    <h2>Primary Global Energy Consumption 2023</h2>
+                    <canvas id="energyChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        
+            <script>
+                // JavaScript to create the pie chart
+                const ctx = document.getElementById('energyChart').getContext('2d');
+                const data = {
+                    labels: [
+                        'Oil (31.7%)',
+                        'Natural Gas (23.3%)',
+                        'Coal (26.5%)',
+                        'Nuclear Energy (4.0%)',
+                        'Hydroelectric (6.4%)',
+                        'Renewables (8.2%)'
+                    ],
+                    datasets: [{
+                        label: 'Global Energy Consumption',
+                        data: [31.7, 23.3, 26.5, 4.0, 6.4, 8.2],
+                        backgroundColor: [
+                            '#FFA500', // Oil - orange
+                            '#00BFFF', // Natural Gas - light blue
+                            '#708090', // Coal - gray
+                            '#8A2BE2', // Nuclear - purple
+                            '#7FFF00', // Hydroelectric - chartreuse
+                            '#32CD32'  // Renewables - lime green
+                        ],
+                        hoverOffset: 4
+                    }]
+                };
+        
+                const config = {
+                    type: 'pie',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'right',
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const label = context.label || '';
+                                        const value = context.raw || 0;
+                                        return label + ': ' + value + '%';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                };
+        
+                const energyChart = new Chart(ctx, config);
+            </script>
+
+<div class="content">
+    <h1>Energy Consumption in India - 2021</h1>
+
+    <!-- Box for coal and oil percentage -->
+    <div class="percentage-box">
+        <div class="percentage">
+            <h2>Coal</h2>
+            <p>45% of total energy supply</p>
+        </div>
+        <div class="percentage">
+            <h2>Oil</h2>
+            <p>24% of total energy supply</p>
+        </div>
+    </div>
+
+    <!-- Bar chart for total energy supply -->
+    <canvas id="barChart" width="400" height="200"></canvas>
+
+    <!-- Line chart for energy trends over time -->
+    <canvas id="lineChart" width="400" height="200"></canvas>
+</div>
+
+<script src="script.js"></script>
+            <section class="initiatives">
+                <h2>University Initiatives for Sustainability</h2>
+                <p>LPU is committed to reducing energy consumption and enhancing sustainability through several initiatives:</p>
+                <ul>
+                    <li>Installation of solar panels across campus to minimize reliance on fossil fuels.</li>
+                    <li>Encouraging public transport, cycling, and walking within the campus to reduce carbon emissions.</li>
+                    <li>Implementing energy-efficient lighting and smart temperature control systems in university buildings.</li>
+                    <li>Organizing regular workshops on sustainable practices for students and staff.</li>
+                </ul>
+            </section>
+    
+            <section class="energy-saving-tips">
+                <h2>Energy Saving Tips for Students</h2>
+                <ul>
+                    <li><strong>Turn off Lights:</strong> Make it a habit to switch off lights and fans when leaving a room.</li>
+                    <li><strong>Use Energy-Efficient Appliances:</strong> Choose appliances with good energy ratings.</li>
+                    <li><strong>Limit Screen Time:</strong> Power down electronics when not in use.</li>
+                    <li><strong>Use Natural Light:</strong> Try to study or work during daylight hours to reduce electricity use.</li>
+                    <li><strong>Minimize Water Heating:</strong> Heating water consumes a lot of energy; use it only when necessary.</li>
+                </ul>
+            </section>
+        </main>
+        <section class="decorative-section">
+            <h3>Let's make a difference!</h3>
+            <p>As part of our commitment to the environment, LPU is taking numerous steps to promote sustainability, including the use of solar energy and efficient electricity consumption practices across campus.</p>
+            <div class="doodles-container">
+                <img src="https://parspng.com/wp-content/uploads/2022/11/lamppng.parspng.com-9-600x709.png" alt="Doodle 1" class="doodle doodle1">
+                <img src="https://static.vecteezy.com/system/resources/previews/009/384/685/original/smiling-sun-cartoon-clipart-design-illustration-free-png.png" alt="Doodle 2" class="doodle doodle2">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lovely Professional University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Energy Dashboard - Solar Energy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Solar Energy Generation at LPU</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="solar.html">Solar Energy</a>
+            <a href="electricity.html">Electricity Usage</a>
+            <a href="temperature.html">Temperature</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Solar Power Generation by Campus Block</h2>
+            <p>At LPU, solar power contributes significantly to our energy requirements. This renewable source not only helps reduce emissions but also supports a more sustainable energy model across campus.</p>
+            
+            <table class="solar-table">
+                <thead>
+                    <tr>
+                        <th>Campus Block</th>
+                        <th>Solar Energy Generated (kWh)</th>
+                        <th>Cost Savings (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admission Block</td>
+                        <td id="admission-energy">1200</td>
+                        <td id="admission-savings">₹6,600</td>
+                    </tr>
+                    <tr>
+                        <td>Central Library</td>
+                        <td id="library-energy">950</td>
+                        <td id="library-savings">₹5,225</td>
+                    </tr>
+                    <tr>
+                        <td>Boys Hostels</td>
+                        <td id="boys-energy">800</td>
+                        <td id="boys-savings">₹4,400</td>
+                    </tr>
+                    <tr>
+                        <td>Girls Hostels</td>
+                        <td id="girls-energy">700</td>
+                        <td id="girls-savings">₹3,850</td>
+                    </tr>
+                    <tr>
+                        <td>Uni Mall</td>
+                        <td id="mall-energy">600</td>
+                        <td id="mall-savings">₹3,300</td>
+                    </tr>
+                    <tr>
+                        <td>Uni Hospital</td>
+                        <td id="hospital-energy">650</td>
+                        <td id="hospital-savings">₹3,575</td>
+                    </tr>
+                    <tr>
+                        <td>Baldev Raj Mittal Unipolis</td>
+                        <td id="unipolis-energy">500</td>
+                        <td id="unipolis-savings">₹2,750</td>
+                    </tr>
+                    <tr>
+                        <td>Shanti Devi Mittal Auditorium</td>
+                        <td id="auditorium-energy">550</td>
+                        <td id="auditorium-savings">₹3,025</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total</th>
+                        <th id="total-energy">5,950 kWh</th>
+                        <th id="total-savings">₹32,725</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lovely Professional University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
